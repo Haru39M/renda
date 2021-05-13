@@ -1,5 +1,6 @@
 package app.wakayama.harusame.renda
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -22,7 +23,8 @@ class MainActivity : AppCompatActivity() {
             override fun onFinish() {
                 //スタートボタンを表示する
                 startButton.isVisible = true
-                tapButton.setBackgroundResource(R.drawable.background_rounded_circle_glay)
+//                tapButton.setBackgroundResource(R.drawable.background_rounded_circle_glay)
+                tapButton.setBackgroundColor(Color.rgb(155,155,155))
                 second = 10
                 tapCount = 0
             }
